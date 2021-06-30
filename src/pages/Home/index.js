@@ -28,7 +28,7 @@ function Home() {
         </button>
       </div>
       <div className='results-search'>
-        <Results />
+        <Results cep={cep}/>
       </div>
     </>
   );

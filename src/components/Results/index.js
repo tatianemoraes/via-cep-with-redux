@@ -3,17 +3,17 @@ import { returnData } from '../../store/modules/searchCep/action';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container } from './style';
 
-function Results() {
+function Results({ cep }) {
 
   const dispatch = useDispatch(); 
 
-  const { cep, response } = useSelector(state => state.ceps);
+  const { response } = useSelector(state => state.ceps);
 
   useEffect(() => {
     if(cep) {
       dispatch(returnData());
     }
-  }, [cep, dispatch])
+  }, [dispatch])
   
   return (
     <Container>
