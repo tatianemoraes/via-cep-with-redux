@@ -1,0 +1,4 @@
+export const TYPES = {
+  SET_CEP: 'SET_CEP',
+  GET_ADDRESS: 'GET_ADDRESS_COMPLETE'
+}
